@@ -1,0 +1,19 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<h1>hhhshxhxsxnxbxh</h1>
+
+{% if searched %}
+<h1>you have searched for {{searched}} </h1>
+{% for service in serviced %}
+<a href=" {%url 'show' service.id %} "> {{service}} </a>
+{%endfor%}
+
+{%else%}
+<h2>better search for something</h2>
+{%endif%}
+
+{% endblock%}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+    
+{% block content %}
+
+{%if submitted%}
+<h1>you have successfully summited the form</h1>
+{%else%}
+<div>
+    <p>NB: An Interview will be scheduled for you following membership application</p>
+</div>
+<form action="" method="post" style="Text-align:center; margin-top:60px;">
+
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <button type="submit"> Summit </button>
+</form>
+
+{%endif%}
+
+<a href=" {% url 'membertext' %} ">  list of members </a>
+<a href=" {% url 'membercsv' %} ">  spreadsheet of members </a>
+
+{% endblock %}

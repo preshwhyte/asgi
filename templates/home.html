@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+    
+{% block content %}
+
+
+{% include 'css.html' %}
+
+
+
+
+<section class="section">
+    <div class="back">
+        <div class="grid6">
+            <div>
+                <h1>WE ARE COMMITTED IN STRUCTURING A BETTER SOCIETY</h1>
+                <h4>Promoting Peace & a Healthy Lifestyle</h4>
+                <h4>through Advocacies</h4>
+            </div>
+            <div>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="{% static 'image/mental.jpg' %} " >
+                
+                        <div>
+                            <H5> <span style="color: red;">ANTICIPATE!...</span>  ANTI-DRUG ABUSE AND MENTAL HEALTH SUMMIT</H5>
+                            
+                        </div>
+                         
+                      </div>
+        
+                      <div class="carousel-item">
+                        <img src="{% static 'image/SCL.jpg' %} ">
+                        <div>
+                            
+                            <h5>ANTI-DRUG ABUSE CAMPAIGNS</h5>
+                        </div>
+                      </div>
+        
+        
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="mission-grid">
+        <div style="background-color: rgb(73, 223, 73);">
+            <h1>Vision </h1>
+            <p>To create a better society through robust advocacy</p>
+        </div>
+        <div style="background-color: rgb(96, 156, 224);">
+            <h1>Objectives </h1>
+            <h4>To promote</h4>
+            <p>Peace, Good leadership, good health, healthy environment & lifestyles</p>
+        </div>
+        <div style="background-color: green;">
+            <h1>Mission </h1>
+            <p>To inspire, inform and educate the populance through advocacy for peace, healthy Lifestyle
+                , good leadership, environmental protection, volunteering and to stand as a mirror imagefor 
+                peace all geared towards creating a better society.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="sect2">
+    <div class="container">
+        <div class="grid">
+            <div class="kall">
+                <img src="{% static 'image/str2.jpeg' %}" class="tree-image">
+            </div>
+            <div>
+                <h2>We Have The Power Today To Structure The Society To Be Better For Tomorrow</h2>
+                <p>The Society is an environment that houses each and everyone of us and also
+                    is linked with nature the trees, the sun...
+                    
+                </p>
+                <a href=" {% url 'article' %} ">read more</a> 
+                
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="media-icons">
+    <small style="background: rgb(4, 65, 17);color: white;">follow us on:</small><br>
+    <a  href="https://web.facebook.com/ASGInternationalq" target="_blank"> <i class="fab fa-facebook fa-2x"></i></a> <br>
+    <a href="https://twitter.com/offical_asgi" target="_blank"><i class="fab fa-twitter fa-2x"></i></a> <br>
+     <a style="color: rgb(233, 146, 16);"href="https://www.instagram.com/asg_cf/" target="_blank"><i class="fab fa-instagram fa-2x "></i></a><br>
+</div>
+
+<section class="sect3">
+    <div>
+        <h1 style="text-align: center;">PROJECTS</h1>
+        <p style="text-align: center;">The vision of this Organization has been geared towards Structuring the society to 
+            to promate a healthy Lifestyle, Good Environment, Better Leadership, and so on
+        </p>
+
+        <div class="grid2">
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/SCL.jpg' %} " alt="">
+                <h1>Anti-Drug Abuse Campaign</h1>
+                <p>The Sensitization against the abuse of drugs started from the 13th of april 2019
+                    and has been evolving 
+                </p>
+                <button> <a href=" {% url 'drug' %} "> More Details</a> </button>
+                
+            </div>
+            </div>
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/ad1.jpg' %}" alt="">
+                <h1>Media Advocacies</h1>
+                <p>Enlightening the public on relevant matters such as Cancer Awareness, Electoral Violence,
+                maintainin a healthy environment and so on.
+                </p>
+                <button> <a href=" {% url 'advocacy' %} "> More Details</a> </button>
+            </div>
+            </div>
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/ad2.jpg' %}" alt="">
+                <h3>World Environment Day 2019</h3>
+                <p>Advacating in Selected Markets in Port Harcourt on how to keep the 
+                    market environment clean and how to package and dispose waste
+                </p>
+                <button> <a href="{% url 'environ'%}"> More Details</a> </button>
+            </div>
+            </div>
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/covid1.jpg' %}" alt="">
+                <h2>Post Covid Palliative</h2>
+                <p>Essential Materials were distributed in selected Orphanage homes and 
+                    home of the Elderly. 
+                </p>
+                <button> <a href="  {% url 'pall' %} "> More Details</a> </button>
+            </div>
+            </div>
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/ust1.jpg' %}" alt="">
+                <h2>Anti-Drug Abuse Summit</h2>
+                <p>The Organization collaborated with the Rivers State University to hold an Anti-Drug
+                     Abuse Summit
+                </p>
+                <button> <a href="{% url 'ust'   %}"> More Details</a> </button>
+            </div>
+            </div>
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/str2.jpeg' %}" alt="">
+                <h1>Other activities</h1>
+                <p>Advocacies, Sensitizations, events and whole lot of Structuring experiences 
+                </p>
+                <button> <a href=" {%url 'others' %} "> More Details</a> </button>
+                
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+
+
+<section class="sect4">
+    <div>
+        <h1>News/Upcoming Events</h1>
+
+        <div class="flex">
+            <h5>1st-7th December</h5>
+            <p>Anti-Drug Abuse and Mental Health Summit</p>
+            <button>Read More</button>
+
+        </div>
+        <div class="flex">
+            <h5>16th sept</h5>
+            <p>World Day against Human Traffikking</p>
+            <button>Read More</button>
+        </div>
+        <div class="flex">
+            <h3>16th sept</h3>
+            <p>World Malaria Day</p>
+            <button>Read More</button>
+        </div>
+        <div class="flex">
+            <h3>16th sept</h3>
+            <p>World Malaria Day</p>
+            <button>Read More</button>
+        </div>
+
+    </div>
+</section>
+<hr>
+<section class="sect6">
+    <div class="grid4">
+        <div class="member">
+            <a href=" {% url 'addmember' %} "><h1><button type="submit">Become a Member</button></h1></a>
+        </div>
+        <div>
+            <h3>Comments...</h3>
+        <div class="scroll">
+            {% if not post %}
+            No comments Yet.. <a href=""> Add one</a>
+
+            {%else%}
+            {% for comment in post%}
+            {{comment.post}} ~ <strong>{{comment.name}}</strong> ...{{comment.date}}
+            <br>
+            <hr>
+            {%endfor%}
+            {%endif%}
+         </div>
+            <p>comment</p>
+            <form action="" method="post">
+                {%csrf_token %}
+                {{postedform.as_p}}
+                <button type="submit">post</button>
+            </form>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+{% endblock %}
