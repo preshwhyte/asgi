@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+    
+{% block content %}
+
+
+{% include 'css.html' %}
+
+<section class="sect3">
+    <div>
+        <h1 style="text-align: center;">PROJECTS</h1>
+        <p style="text-align: center;">The vision of this Organization has been geared towards Structuring the society to 
+            to promate a healthy Lifestyle, Good Environment, Better Leadership, and so on
+        </p>
+
+        <div class="grid2">
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/SCL.jpg' %} " alt="">
+                <h1>Anti-Drug Abuse Campaign</h1>
+                <p>The Sensitization against the abuse of drugs started from the 13th of april 2019
+                    and has been evolving 
+                </p>
+                <button> <a href=" {% url 'drug' %} "> More Details</a> </button>
+                
+            </div>
+            </div>
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/ad1.jpg' %}" alt="">
+                <h1>Media Advocacies</h1>
+                <p>Enlightening the public on relevant matters such as Cancer Awareness, Electoral Violence,
+                maintainin a healthy environment and so on.
+                </p>
+                <button> <a href=" {% url 'advocacy' %} "> More Details</a> </button>
+            </div>
+            </div>
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/ad2.jpg' %}" alt="">
+                <h3>World Environment Day 2019</h3>
+                <p>Advacating in Selected Markets in Port Harcourt on how to keep the 
+                    market environment clean and how to package and dispose waste
+                </p>
+                <button> <a href="{% url 'environ'%}"> More Details</a> </button>
+            </div>
+            </div>
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/covid1.jpg' %}" alt="">
+                <h2>Post Covid Palliative</h2>
+                <p>Essential Materials were distributed in selected Orphanage homes and 
+                    home of the Elderly. 
+                </p>
+                <button> <a href="  {% url 'pall' %} "> More Details</a> </button>
+            </div>
+            </div>
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/ust1.jpg' %}" alt="">
+                <h2>Anti-Drug Abuse Summit</h2>
+                <p>The Organization collaborated with the Rivers State University to hold an Anti-Drug
+                     Abuse Summit
+                </p>
+                <button> <a href="{% url 'ust'   %}"> More Details</a> </button>
+            </div>
+            </div>
+            <div class="project">
+                <div class="vert">
+                <img src="{% static 'image/str2.jpeg' %}" alt="">
+                <h1>Other activities</h1>
+                <p>Advocacies, Sensitizations, events and whole lot of Structuring experiences 
+                </p>
+                <button> <a href=" {%url 'others' %} "> More Details</a> </button>
+                
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+<div style="height: 100px;background:linear-gradient(180deg, yellowgreen, white);">
+
+</div>
+{% endblock %}

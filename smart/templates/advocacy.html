@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+
+
+
+{% block content %}
+
+<style>
+    body{
+        margin: auto;
+        width: 90%;
+        background-color: rgb(236, 250, 215);
+    }
+.drug-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+    
+}
+h3{
+    margin-top: 30px;
+}
+.drug-grid img{
+    width: 100%;
+    border-radius: 10px;
+    padding: 2px;
+}
+@media screen and (max-width:550px) {
+
+    .drug-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+    
+}
+}
+</style>
+
+<div>
+    <div class="">
+        <h3>Robust Outreaches on Matters relevant to the Society such as environmental Advocacies, Advocacies
+            against Electoral Violence, World Cancer Awareness.
+        </h3>
+        <div class="drug-grid">
+            <img src=" {% static 'image/ad1.jpg' %} " alt="">
+            <img src=" {% static 'image/ad2.jpg' %} " alt="">
+            <img src=" {% static 'image/ad4.jpg' %} " alt="">
+            <img src=" {% static 'image/ad5.jpg' %} " alt="">
+          
+
+  
+        </div>
+
+
+</div>
+
+
+
+{%endblock%}
+

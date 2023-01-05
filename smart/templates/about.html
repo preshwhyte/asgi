@@ -1,0 +1,235 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+    
+{% block content %}
+<style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: aliceblue;
+        color: black;
+    }
+    .about-bg{
+        background: url(' {%static "image/logo2.png"  %} ');
+        height: 100px;
+        text-align: center;
+        
+    }
+    .board-sect{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        
+    }
+   
+    .board-sect img {
+        height: 250px;
+        width: 250px;
+        
+
+        border-radius: 100%;
+        border: solid greenyellow;
+        
+
+    }
+    .members{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: beige;
+        text-align: center;
+    }
+    .members p{
+        padding-bottom: 20px;
+    }
+
+    .members img{
+        height: 250px;
+        width: 250px;
+      
+        
+
+        border-radius: 100%;
+        border: solid greenyellow;
+
+    }
+    .member-list h1{
+        text-align: center;
+    }
+    .member-list{
+        margin-top: 50px;
+    }
+   
+    @media screen and (max-width:550px) {
+    .members{
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+}
+</style>
+
+<div class="about-bg">
+
+</div>
+<div style="background-color: green; text-align: center; border-top: 2px greenyellow solid;">
+    <h1>ABOUT US</h1>
+    <p style="color: aliceblue;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><span style="font-weight: bold;">ACT SMART AND GREEN COMMUNITY FOUNDATION</span> is a Non Governmental Organization that is COMMITTED
+        to Structure a Better Society by inspiring, informing and educating the populance through
+         advocacy for peace, healthy Lifestyle , good leadership, environmental protection, 
+        volunteering and to stand as a mirror image for peace all geared towards creating a better society
+    </p>
+    <p style="font-weight: bold;">Our Board</p>
+    <p style="font-weight: bold;">Our Team</p>
+    </div>
+
+<section class="board-sect">
+    <h1>Our Board</h1>
+    <div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'image/ceo.jpg' %} " >
+        
+                <div>
+                    <h5>Ceo/Founder</h5>
+                    <p>Dr. Azuonwu Obioma</p>
+                </div>
+                 
+              </div>
+
+              <div class="carousel-item">
+                <img src="{% static 'image/faith.jpg' %} ">
+                <div>
+                    <h5>Board Member</h5>
+                    <p>Barr. Anokwuru Faith</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'image/wokem.jpg' %} ">
+                <div>
+                    <h5>Board Member</h5>
+                    <p>Prof. Wokem Gloria</p>
+                </div>
+              </div>
+</div>
+</div>
+    </div>
+</section>
+
+<section class="member-list">
+    
+    <h1 >Executives and Members of ASGCF</h1>
+    <div class="members">
+        <div>
+            <img src="{% static 'image/ceo.jpg' %} ">
+            <h5>Ceo/Founder</h5>
+            <p>Dr. Azuonwu Obioma</p>
+        </div>
+        <div>
+            <img src="{% static 'image/ngei2.jpg' %} ">
+            <h5>Coordinator I</h5>
+            <p>Rotr. Ngei Paul</p>
+        </div>
+
+        <div>
+            <img src="{% static 'image/prince.png' %} ">
+            <h5>Coordinator II</h5>
+            <p>Comr. Igwe Prince</p>
+        </div>
+        <div>
+            <img src="{% static 'image/faith.jpg' %} ">
+            <h5>Dir. Public Engagements</h5>
+            <p>Barr. Anokwuru Faith</p>
+        </div>
+        <div>
+            <img src="{% static 'image/austine.jpg' %} ">
+            <h5>General Secretary</h5>
+            <p>Amb. Anthony Augustine</p>
+        </div>
+        <div>
+            <img src="{% static 'image/byron.jpg' %} ">
+            <h5>Asst. Secretary</h5>
+            <p>Ama-Okachi Byron</p>
+        </div>
+        <div>
+            <img src="{% static 'image/presh.jpg' %} ">
+            <h5>Dir. Comm. & Innovations</h5>
+            <p>Nwogu Precious</p>
+        </div>
+        <div>
+            <img src="{% static 'image/bura.jpg' %} ">
+            <h5>Program Manager</h5>
+            <p>Miss. Burabari Sigalo</p>
+        </div>
+        
+        <div>
+            <img src="{% static 'image/paulg.jpg' %} ">
+            <h5>Dir. Research & Planning</h5>
+            <p>Rotr. Gorsi Paul</p>
+        </div>
+        <div>
+            <img src="{% static 'image/irolah.jpg' %} ">
+            <h5>Treasurer</h5>
+            <p>Miss. Ogbonda Irolah L.</p>
+        </div>
+        <div>
+            <img src="{% static 'image/godswill.jpg' %} ">
+            <h5>Media & Logistics</h5>
+            <p>Mr. Ezem T. Godswill</p>
+        </div>
+        <div>
+            <img src="{% static 'image/Didia.jpg' %} ">
+            <h5></h5>
+            <p>Didia Blessing (jnr)</p>
+        </div>
+        <div>
+            <img src="{% static 'image/eli.jpg' %} ">
+            <h5></h5>
+            <p>Okpara Elisha</p>
+        </div>
+        <div>
+            <img src="{% static 'image/chris.jpg' %} ">
+            <h5>Media and Logistics</h5>
+            <p>Aloy Christopher</p>
+        </div>
+        <div>
+            <img src="{% static 'image/asuru.jpg' %} ">
+            <h5></h5>
+            <p>Asuru Victory</p>
+        </div>
+        <div>
+            <img src="{% static 'image/good.png' %} ">
+            <h5></h5>
+            <p>Miss Nwanyanwu Goodluck</p>
+        </div>
+        <div>
+            <img src="{% static 'image/opus2.jpg' %} ">
+            <h5></h5>
+            <p>Opusunju Victor</p>
+        </div>
+        <div>
+            <img src="{% static 'image/kemsi.jpg' %} ">
+            <h5></h5>
+            <p>Kemsi Blessing</p>
+        </div>
+        <div>
+            <img src="{% static 'image/amaka.jpg' %} ">
+            <h5></h5>
+            <p>Chiamaka Lydia</p>
+        </div>
+
+        
+
+    </div>
+</section>
+<div style="height: 100px;background:linear-gradient(180deg, yellowgreen, white);">
+
+</div>
+
+
+{% endblock %}
+

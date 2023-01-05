@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        margin: auto;
+        width: 90%;
+        background-color: rgb(236, 250, 215);
+    }
+.drug-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+    
+}
+h3{
+    margin-top: 30px;
+}
+.drug-grid img{
+    width: 100%;
+    border-radius: 10px;
+    padding: 2px;
+}
+@media screen and (max-width:550px) {
+
+    .drug-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+    
+}
+}
+</style>
+
+<div>
+    <div class="">
+        <h3>11th june, 2019 @ Enitona High school, borikiri port harcourt</h3>
+        <div class="drug-grid">
+            <img src=" {% static 'image/csr1.jpg' %} " alt="">
+            <img src=" {% static 'image/csr2.jpg' %} " alt="">
+            <img src=" {% static 'image/csr3.jpg' %} " alt="">
+            <img src=" {% static 'image/csr4.jpg' %} " alt="">
+            <img src=" {% static 'image/csr5.jpg' %} " alt="">
+            <img src=" {% static 'image/csr6.jpg' %} " alt="">
+            <img src=" {% static 'image/csr7.jpg' %} " alt="">
+            <img src=" {% static 'image/csr8.jpg' %} " alt="">
+  
+        </div>
+<div class="">
+    <h3>11th june, 2019 @ Enitona High school, borikiri port harcourt</h3>
+    <div class="drug-grid">
+        <img src=" {% static 'image/sch5.jpg' %} " alt="">
+        <img src=" {% static 'image/sch7.jpg' %} " alt="">
+        <img src=" {% static 'image/sch8.jpg' %} " alt="">
+    </div>
+ 
+
+</div>
+
+<div>
+   
+    <h3> University of Port Harcourt Demonstration School,aluu</h3>
+    <div class="drug-grid">
+        <img src=" {% static 'image/udss.jpg' %} " alt="">
+        <img src=" {% static 'image/udss1.jpg' %} " alt="">
+        <img src=" {% static 'image/udss2.jpg' %} " alt="">
+        <img src=" {% static 'image/udss3.jpg' %} " alt="">
+        <img src=" {% static 'image/udss4.jpg' %} " alt="">
+    </div>
+
+</div>
+<div>
+
+    <h3> Enitona High school</h3>
+    <div class="drug-grid">
+        <img src=" {% static 'image/sch5.jpg' %} " alt="">
+        <img src=" {% static 'image/sch7.jpg' %} " alt="">
+        <img src=" {% static 'image/sch8.jpg' %} " alt="">
+    </div>
+
+</div>
+
+</div>
+
+
+
+{% endblock %}
