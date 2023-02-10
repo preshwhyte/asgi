@@ -8,7 +8,7 @@ from django import forms
 class memberform(forms.ModelForm):
     class Meta:
         model=member
-        fields=('Firstname', 'Lastname', 'other', 'email', 'address', 'phone')
+        fields=('Firstname', 'Lastname', 'others','gender', 'email', 'address', 'phone','profession')
 
 class postform(forms.ModelForm):
     class Meta:

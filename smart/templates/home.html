@@ -10,20 +10,19 @@
 
 
 
-
 <section class="section">
     <div class="back">
         <div class="grid6">
             <div>
                 <h1>WE ARE COMMITTED IN STRUCTURING A BETTER SOCIETY</h1>
-                <h4>Promoting Peace & a Healthy Lifestyle</h4>
-                <h4>through Advocacies</h4>
+                <h5>Promoting Peace & a Healthy Lifestyle</h5>
+                <h5 >through Advocacies</h5>
             </div>
-            <div>
+            <div class="display">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="{% static 'image/mental.jpg' %} " >
+                      <div class="carousel-item active carousalpics">
+                        <img src="{% static 'image/MS.jpg' %} "  class="">
                 
                         <div>
                             <H5> <span style="color: red;">ANTICIPATE!...</span>  ANTI-DRUG ABUSE AND MENTAL HEALTH SUMMIT</H5>
@@ -32,7 +31,7 @@
                          
                       </div>
         
-                      <div class="carousel-item">
+                      <div class="carousel-item carousalpics">
                         <img src="{% static 'image/SCL.jpg' %} ">
                         <div>
                             
@@ -46,6 +45,16 @@
 
 
 
+
+        </div>
+    </div>
+</section>
+<section>
+    <div>
+        <div style="text-align: center; font-size: 2rem; font-weight: 900; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" id="numbers">
+
+        </div>
+        <div id="">
 
         </div>
     </div>
@@ -237,6 +246,24 @@
     </div>
 
 </section>
+
+
+    <script type="text/javascript" >
+        numbers=document.getElementById('numbers')
+        count=3
+
+        let interval= setInterval(function(){
+            numbers.textContent=`  ${count}+ members `
+           
+            if (count==30) clearInterval(interval)
+            count+=3;
+            
+
+        }, 500)
+
+
+    </script>
+
 
 
 

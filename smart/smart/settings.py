@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(ma74i_%gq&rto_aasji9zfiiu%2ulo)m542t0akw^s7ui0l%f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -42,7 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'smartapp'
+    'cloudinary_storage',
+    'cloudinary',
+    'smartapp',
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
@@ -129,9 +133,16 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL="/media/"
+MEDIA_ROOT=os.path.join(BASE_DIR, "media")
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-django_heroku.settings(locals())
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'deeoaqzok',
+    'API_KEY': '394463329969114',
+    'API_SECRET': 'EvT6KS7FXiy5zJw3HO1uBdey_MI'
+}
 
 
 

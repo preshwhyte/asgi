@@ -20,6 +20,7 @@ urlpatterns=[
     path('search/', views.search, name='search'),
     path('members/<showid>', views.sershow, name='show'),
     path('article/',views.article, name='article'),
-    path('login/', views.signin, name='login')
+    path('login/', views.signin, name='login'),
+    path('apis/', views.api, name='apis')
 
 ]

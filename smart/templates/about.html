@@ -13,6 +13,7 @@
     body{
         background-color: aliceblue;
         color: black;
+        width: 100%;
     }
     .about-bg{
         background: url(' {%static "image/logo2.png"  %} ');
@@ -21,7 +22,7 @@
         
     }
     .board-sect{
-        width: 50%;
+        width: 100%;
         margin: auto;
         text-align: center;
         
@@ -124,12 +125,20 @@
     
     <h1 >Executives and Members of ASGCF</h1>
     <div class="members">
+        {%for member in members%}
         <div>
+            <img src=" {{member.image.url}} ">
+            <h5> {{member.post}} </h5>
+            <p>{{member.name}}</p>
+        </div>
+
+        {%endfor%}
+        <!-- <div>
             <img src="{% static 'image/ceo.jpg' %} ">
             <h5>Ceo/Founder</h5>
             <p>Dr. Azuonwu Obioma</p>
-        </div>
-        <div>
+        </div> -->
+        <!-- <div>
             <img src="{% static 'image/ngei2.jpg' %} ">
             <h5>Coordinator I</h5>
             <p>Rotr. Ngei Paul</p>
@@ -220,7 +229,7 @@
             <img src="{% static 'image/amaka.jpg' %} ">
             <h5></h5>
             <p>Chiamaka Lydia</p>
-        </div>
+        </div> -->
 
         
 

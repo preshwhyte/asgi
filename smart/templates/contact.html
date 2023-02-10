@@ -7,30 +7,75 @@
 
 
 {% include 'css.html' %}
-            <div>
-                <div class="flex">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <h5>+447440725730
-                        +2347026177704
-                        
-                    </h5>
-                </div>
-                <div class="flex">
-                    <i  class="fa-solid fa-envelope"></i>
-                    <h5>asgcfoundation@gmail.com
-                        
-                    </h5>
-                </div>
-                <div class="flex">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h5>40 Osmund Drive, Golding, Northampton, NN3 8XB, United Kingdom.
-                        <h5>24 Ebara Road Orazi, Port Harcourt Rivers State, Nigeria.</h5>
-                        
-                    </h5>
-                </div>
-            </div>
 
-            <div style="height: 100px;background:linear-gradient(180deg, yellowgreen, white);">
+<style>
 
-            </div>
+.one{
+    background-color: green;
+    height: 150px;
+}
+.two{
+    background-color: white;
+    width: 50%;
+    height: 50px;
+    
+}
+.three{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.four{
+    background-color: green;
+    
+    width: 80%;
+    
+}
+.four p, h2{
+    color: white;
+    margin: 20px 0 20px 20px;
+}
+form{
+    margin: 20px 0 20px 40px;
+}
+form input{
+    
+}
+
+</style>
+
+<div class="one">
+    <div class="two">
+        <h1 class="three">Contact Us</h1>
+
+    </div>
+</div>
+<div class="four">
+    <h2>
+        we would love to hear from you
+    </h2>
+    <p>
+        40 Osmund Drive, Golding, Northampton, NN3 8XB, United Kingdom.
+                       
+    </p>
+    <p>
+        24 Ebara Road Orazi, Port Harcourt Rivers State, Nigeria.
+    </p>
+    <p>
+        Tel: +447440725730, 
+        +2347026177704
+    </p>
+    <p>
+        Email: asgcfoundation@gmail.com
+    </p>
+</div>
+
+<form action="">
+    <input type="text" placeholder="Name"><br><br>
+    <input type="text" placeholder="Email Address"><br><br>
+    <textarea name="" placeholder="message" id="" cols="30" rows="5"></textarea><br>
+    <input type="submit" value="Send">
+</form>
+            
+
+            
             {% endblock %}

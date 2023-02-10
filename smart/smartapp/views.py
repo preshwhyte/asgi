@@ -3,7 +3,7 @@ from urllib import response
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .form import memberform, postform
-from .models import member, Comment
+from .models import member, Comment, MemberList
 from django.http import HttpResponseRedirect
 from django.contrib.auth import authenticate , login
 import csv
@@ -21,19 +21,19 @@ def member_csv(request):
 
     writer=csv.writer(response)
 
-    writer.writerow(['firstname', 'lastname', 'phone number' ])
+    writer.writerow(['firstname', 'lastname','others','gender', 'phone number', 'address', 'profession' ])
 
     # lines=['this is my world']
     lines=[]
 
     for mem in members:
-        writer.writerow([mem.Firstname, mem.Lastname, mem.phone])
+        writer.writerow([mem.Firstname, mem.Lastname,mem.others,mem.gender, mem.phone,mem.address, mem.profession])
 
     
     return response
 
 
-
+@login_required
 def member_text(request):
     response=HttpResponse(content_type='text/plain')
     response['Content-Disposition'] ='attachment; filename=member.txt'
@@ -63,7 +63,9 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'about.html')
+    members=MemberList.objects.all()
+    context={'members':members}
+    return render(request, 'about.html', context)
 
 
 def events(request):
@@ -148,3 +150,9 @@ def signin(request):
             return redirect('login')
             
     return render(request, 'login.html')
+
+
+
+
+def api(request):
+    return render(request, 'api.html')
